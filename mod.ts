@@ -32,7 +32,7 @@ export async function initDenoProject() {
     await genFiles([
         [`${curPath}/.gitignore`, genGitIgnore],
         [`${curPath}/package.json`, genPackageJSON],
-        [`${curPath}tsconfig.json`, genTsconfigJSON],
+        [`${curPath}/tsconfig.json`, genTsconfigJSON],
     ]);
     await run({
         args: ["npm", "install"],
